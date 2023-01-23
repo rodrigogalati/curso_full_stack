@@ -1,0 +1,196 @@
+/*
+
+	*/
+* {
+			  box-sizing: border-box;
+			  
+			}
+
+			html {	margin: 0;
+					padding: 0;
+					font-family: sans-serif;
+					font-size: 62.5%; /* equivalente a 10px */
+			}
+
+			body { 
+				background-color: #696969	;
+			  
+			}
+
+ h2, p, li { font-family: Arial, Helvetica, sans-serif;
+ 				color: 	#000000;		
+ }
+
+ a {
+ 	color: 	#000000;
+ 	text-decoration:  important	;
+ }
+
+ 		#primeiro-link a {
+ 		color: 	#933	;		
+ 		}
+
+ul {
+	background-color: white		;
+	font-size: 20px;
+}
+
+
+ ul li {
+ 	font-size: .8em; /* equivalente a 16px */
+ 	font-size: 1.6rem; /* equivalente a 16px */
+ 	width: 80%;
+ 	height: 4rem; /* equivalente a 30px */
+
+ }
+
+
+ p {
+ 	font-size: 1.5rem; /*equivalente a 16px */
+ }
+
+
+h2 {
+ font-size: 3rem ;
+ height: 3rem;
+ text-shadow: 1.5px 1.5px 4px darkred;
+}
+
+h1 {
+	color: black;
+	font-size: 2rem;
+}
+
+.navegação {
+background-color: 	#ffffff	;
+
+}
+
+.navegacão a {
+	color: #393;
+}
+
+form div {
+	background: #ffffff	;
+	border: 0 ;
+	border-bottom: 3px solid #696969;
+	/*
+	border-top: 1px solid #33f;
+	border-left: 1px solid #33f;
+	border-right: 1px solid	#33f;
+	*/
+ 	margin: 2rem 2rem;
+ 	padding: 1rem;
+
+}
+
+ label {
+ 	margin-bottom: 1rem;
+ 	font-size: 1.4rem;
+ 	font-family: sans-serif;
+ 	font-weight: bold;
+ 	color: black	;
+ }
+
+input {
+
+	padding: 1rem;
+}
+
+ [type="text"], [type="email"], textarea, label {
+ 	width: 100%;
+ 	display: block;
+ }
+
+	       
+			header {
+			  background-color: #696969;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #A9A9A9;
+			  padding: 19px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			/*
+				top (cima)
+				bottom (baixo)
+				left (esquerda)
+				right (direita)
+				*/
+
+			form div	{
+				position: static;
+				position: relative;
+				top: -10px;
+			
+			}
+
+
+
+  /* tablet e laptop 426 pra cima */
+  @media (min-width: 426px) {
+  
+	body {
+	  background-color: lightblue;
+	  color: black;
+	}
+		}
+		
+	
+		/* Smartphone */
+		@media (max-width: 425px){
+		  nav,
+		  article,
+		  .coluna {
+			width: 100%;
+			background-color: dimgray;
+			min-width: 320px;
+		  }
+		}
+  

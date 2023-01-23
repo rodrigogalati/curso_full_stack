@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+
+		
+		<style>
+
+
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 100%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: center;
+			  padding: 40px;
+			  width: 100%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: rgb(172, 72, 72);
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<div img="./frondend/html/images/carro_moto_caminhao.jpg"></div>
+		
+		<header>
+			<h2>História dos veículos</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+<nav>
+			<article>
+				<h1>História do carro</h1>
+
+				<p>Há algumas controvérsias sobre a data de invenção do primeiro carro. No entanto, registros mostram que em janeiro de 1886 o engenheiro alemão Karl Friedrich Michael Benz registrou a patente DRP 37435 e em junho do mesmo ano apresentou o Benz Patent-Motorwagen, primeiro automóvel movido a gasolina do mundo.</p>
+				
+			</article>
+</nav>
+<nav>
+			<article>
+				<h1>História da motoclicleta</h1>
+
+				<p>O inventor da motocicleta com motor de combustão interna foi o alemão Gottlieb Daimler, que, ajudado por Wilhelm Maybach, em 1885, instalou um motor a gasolina de um cilindro, leve e rápido, numa bicicleta de madeira adaptada, com o objetivo de testar a praticidade do novo propulsor.</p>
+
+			</article>
+</nav>
+<nav>
+			<article>
+				<h1>História do caminhão</h1>
+				<p>Foi então que, em 1895, o alemão Karl Benz desenhou e construiu o primeiro caminhão da história que foi feito com um motor de combustão interna.</p>
+			</article>
+</nav>
+
+		
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Rodrigo R. Galati</p>
+		</footer>
+		
+	</body>
+</html>
