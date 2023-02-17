@@ -26,8 +26,8 @@ git clone https://github.com/rodrigogalati/curso_full_stack.git
  Informação de alteração
  - após testado todo seu código 
  - git add *
- - git commit -m "mensagem"
- - git push ( enviar alterações para o repositório )
+ - git commit -m "mensagem" ( para commitar as informacoes)
+ - git push ( enviar alterações para o repositório do git)
  - git pull ( puxar / atualizar sua maquina, trazer do servidor para sua maquina )
  
 
