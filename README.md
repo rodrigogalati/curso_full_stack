@@ -24,3 +24,17 @@ Informação de alteração
 
 ## Gitflow
 Fluxo do Git
+
+### Branchs
+São ramificações / versões paralelas do código
+
+- main / master ( vai pra produção, qndo o projeto é publicado )
+- develop 
+
+- versionamento 0.1.10
+
+git checkout -b dev ( cria uma branch )
+git checkout master ( mudar de branch )
+
+### Merge
+Mescla de branchs
